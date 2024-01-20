@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: url('https://cdn.discordapp.com/attachments/1191571552987250778/1198092167785230386/170571783122023061.png?ex=65bda548&is=65ab3048&hm=0c6481081bb7f8e3b1969bfab3a5db8348fdefd62d92ef757079832138245857&') center/cover no-repeat;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            position: relative;
+        }
 
+        .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+        }
+
+        .centered-image {
+            width: 150px;
+            height: 150px;
+            background: url('https://cdn.discordapp.com/attachments/1191571552987250778/1198089243206107247/170571713421326402.png?ex=65bda28f&is=65ab2d8f&hm=6664b3d10d93ddbbb2f19dd3ad803483b2e03735f8fdc00dd359e32d23d21a55&') center/cover no-repeat;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text {
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+            margin-left: 5px;
+        }
+    </style>
+    <title>CSS Website</title>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="centered-image"></div>
+    <div class="text">Developers</div>
+</body>
+</html>
