@@ -1,48 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Notebook - Free Version</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3982/3982361.png">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Notebook - Free Version</title>
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/980568479822401656/1207168999008501810/bb80856c8238d149ed6ebfad6746a9ad.png?ex=65deaabd&is=65cc35bd&hm=1d22025c536454a973e0277b40fa7a5aeefb36b370ed9275bd4e8057155ae92a&">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-gray-800 p-8">
 
-<div class="container mx-auto mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="cardsContainer" style="display: none;">
-    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center" onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205306908072869928/goofy-ahh.mp3?ex=65d7e488&is=65c56f88&hm=2ee5505e4bd28728977d7835dd57d9c4338f7db15a935d6b556056b605a6c378&')">Nerd</div>
-    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center" onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205307233517441054/metal-pipe-clang.mp3?ex=65d7e4d5&is=65c56fd5&hm=35adc07c8d5116ab8a768150888576b77730e3a4567ab7329d7a5a350de8c726&')">Metal Pipe</div>
-    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center" onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205307707201036298/we-do-not-care_phB0mEB.mp3?ex=65d7e546&is=65c57046&hm=928d1ed80f6fcc054c301501f7f663bd8c069f09bbc1614858cd90799346738e&')">We do not care</div>
-    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center" onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205307975611449354/bomboclat.mp3?ex=65d7e586&is=65c57086&hm=2ea9e1ef80b3232cd292563790d55dbb8106687267c7774dad9c9a13e1af572f&')">BOMBOCLAT</div>
-    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center" onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205308577493950474/gary_meow.mp3?ex=65d7e616&is=65c57116&hm=dfd07ee92ceb871535eab1905b8938abbd34ac699adbcbb356e50157eb4e2536&')">Spongebob Mow</div>
-    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center" onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205308966981083186/bye-bye-mewing_vUvlJKN.mp3?ex=65d7e673&is=65c57173&hm=567eb0b5428941fbe530c79097f0e817e2423cb66a79a4c6a2a9262008be4e70&')">Mewing Song</div>
-    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center" onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205309127056822333/shaq-tell-me-how-my-ass-tastes.mp3?ex=65d7e699&is=65c57199&hm=3157e98ee289e07f1a0087b97463a8aa046a8a64b717a5e3e97819d06e095284&')">Shaq Tell Me How</div>
-    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center" onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205309379159785482/sigma.mp3?ex=65d7e6d5&is=65c571d5&hm=4754747b0274760e10c50e67db1f1fbca606dcdb9094c69273148219505b0a2a&')">Sigma</div>
-    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center" onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205309753803415644/pookie-bear.mp3?ex=65d7e72e&is=65c5722e&hm=68f7c0d69364e1a37405cc46993d1e270d30735856afd70cad1d79f6e2714746&')">Pookie Bear</div>
-    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center" onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205310115427655690/prowler-sound-effect_6bXErot.mp3?ex=65d7e785&is=65c57285&hm=2c1d7f6d4f033687a1d56440510e0adb63eb7b08298e1dc6794131386a9d882e&')">Prowler</div>
-    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center" onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205310392826601503/don-pollo-king-7.mp3?ex=65d7e7c7&is=65c572c7&hm=a787881b6ac1ab3e0ee90f3c56b1db895f49c7a6adad02c74c7d639a9fb1bc23&')">Don Polo King</div>
-    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center" onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205310609047162952/root-beer_6G1Jg6l.mp3?ex=65d7e7fa&is=65c572fa&hm=f0679766f767928acbc0aa29727e98f2dd01b1593f1de171a139958756584525&')">Rootbeer</div>
-</div>
+  <div class="container mx-auto mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4" id="cardsContainer"
+    style="display: none;">
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205306908072869928/goofy-ahh.mp3?ex=65d7e488&is=65c56f88&hm=2ee5505e4bd28728977d7835dd57d9c4338f7db15a935d6b556056b605a6c378&')">
+      Nerd</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205307233517441054/metal-pipe-clang.mp3?ex=65d7e4d5&is=65c56fd5&hm=35adc07c8d5116ab8a768150888576b77730e3a4567ab7329d7a5a350de8c726&')">
+      Metal Pipe</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205307707201036298/we-do-not-care_phB0mEB.mp3?ex=65d7e546&is=65c57046&hm=928d1ed80f6fcc054c301501f7f663bd8c069f09bbc1614858cd90799346738e&')">
+      We do not care</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205307975611449354/bomboclat.mp3?ex=65d7e586&is=65c57086&hm=2ea9e1ef80b3232cd292563790d55dbb8106687267c7774dad9c9a13e1af572f&')">
+      BOMBOCLAT</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205308577493950474/gary_meow.mp3?ex=65d7e616&is=65c57116&hm=dfd07ee92ceb871535eab1905b8938abbd34ac699adbcbb356e50157eb4e2536&')">
+      Spongebob Mow</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205308966981083186/bye-bye-mewing_vUvlJKN.mp3?ex=65d7e673&is=65c57173&hm=567eb0b5428941fbe530c79097f0e817e2423cb66a79a4c6a2a9262008be4e70&')">
+      Mewing Song</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205309127056822333/shaq-tell-me-how-my-ass-tastes.mp3?ex=65d7e699&is=65c57199&hm=3157e98ee289e07f1a0087b97463a8aa046a8a64b717a5e3e97819d06e095284&')">
+      Shaq Tell Me How</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205309379159785482/sigma.mp3?ex=65d7e6d5&is=65c571d5&hm=4754747b0274760e10c50e67db1f1fbca606dcdb9094c69273148219505b0a2a&')">
+      Sigma</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205309753803415644/pookie-bear.mp3?ex=65d7e72e&is=65c5722e&hm=68f7c0d69364e1a37405cc46993d1e270d30735856afd70cad1d79f6e2714746&')">
+      Pookie Bear</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205310115427655690/prowler-sound-effect_6bXErot.mp3?ex=65d7e785&is=65c57285&hm=2c1d7f6d4f033687a1d56440510e0adb63eb7b08298e1dc6794131386a9d882e&')">
+      Prowler</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205310392826601503/don-pollo-king-7.mp3?ex=65d7e7c7&is=65c572c7&hm=a787881b6ac1ab3e0ee90f3c56b1db895f49c7a6adad02c74c7d639a9fb1bc23&')">
+      Don Polo King</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1205310609047162952/root-beer_6G1Jg6l.mp3?ex=65d7e7fa&is=65c572fa&hm=f0679766f767928acbc0aa29727e98f2dd01b1593f1de171a139958756584525&')">
+      Rootbeer</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1185866165331955794/1207158397947093022/Bomboclat_meme_SFX.mp3?ex=65dea0dd&is=65cc2bdd&hm=b8ac4cb75fe8fb3ad93059292dd3a910b155b5ebfc1907952d2cf782f9de28a2&')">
+      Bomboclaut Dog</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1185866165331955794/1207158567858217011/Salamalekum_Don_Pollo_Audio_meme.mp3?ex=65dea106&is=65cc2c06&hm=6031d2a73e7b92c1b238bc075eb676c9982a164a90840561cfb606ead16a1ae0&')">
+      Don Pollo King #2</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1185866165331955794/1207158808548479047/Fakumanigan_meme_sound_effect_memepage306.mp3?ex=65dea13f&is=65cc2c3f&hm=591baa0b89767fc544ba612f8ef3f85dd35fc41596a5c870e4c55feb039738d0&')">
+      Fakumanigan</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1207159162090557470/Im_on_that_good_kosh_meme_sound_effect_memepage306.mp3?ex=65dea194&is=65cc2c94&hm=cf07475227ca7af7cfb84f071b8c8967881f995c478461f29c4c0af501306b0e&')">
+      Good kush</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1207159467838541885/Nein_Nein_Nein_Nein_Hitler_Meme_-_Sound_Effect_for_editing.mp3?ex=65dea1dd&is=65cc2cdd&hm=2a2548bb64d0c66e0e138b13a792f1c6877968b6e2a73c43664ce211e436d1d6&')">
+      Nein Nein Nein</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1207159728405487696/Chinese_meme_song.mp3?ex=65dea21b&is=65cc2d1b&hm=bd6a8402418b8499cd3cfd13e06d4d55630d99550e097214d2934507760217a4&')">
+      Chinese Gong</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1207160130781708328/Ambasing_full._Ft_dreambull.mp3?ex=65dea27b&is=65cc2d7b&hm=3893be095d54b5e71f7bf780633bbe8e699e8f14b11ae25638d8b117527fa56c&')">
+      Ambasing</div>
+    <div class="card bg-blue-500 text-white p-2 md:p-4 rounded-md cursor-pointer flex items-center justify-center"
+      onclick="playSound('https://cdn.discordapp.com/attachments/1165849016408481792/1207160355739144234/Ambatubus_-_Hitler_Version_AI_Cover.mp3?ex=65dea2b0&is=65cc2db0&hm=f75868aad56631ca1e150e19a760821a0c3f82ad21dbfbfd86a26f70f1fb5d75&')">
+      Ambasing (German 1945 Leader)</div>
+  </div>
+  <div id="logoContainer" class="text-center mb-4">
+    <img src="https://cdn.discordapp.com/attachments/1185866165331955794/1207166697254027324/Untitled1.png?ex=65dea898&is=65cc3398&hm=6c0bce049fcdfa1cacc4f3159e3ccd80c007758f068e2813ff32ec2b6552a215&" alt="Logo"
+      class="w-1/4 max-w-screen-md mx-auto">
+  </div>
 
-<script>
+  <div id="textInputContainer" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white"
+    style="display: grid;">
+    <textarea class="bg-gray-700 p-4 rounded-md w-96 h-40" placeholder="Type here..."></textarea>
+  </div>
+
+  <div id="bottomLabel" class="text-center text-blue-500 mt-4 absolute bottom-4 left-1/2 transform -translate-x-1/2"
+    style="display: none;">
+    Created by Thomas Miller
+  </div>
+
+  <script>
     let cardsVisible = false;
 
-    function toggleCardsVisibility() {
-        const cardsContainer = document.getElementById('cardsContainer');
-        cardsVisible = !cardsVisible;
-        cardsContainer.style.display = cardsVisible ? 'grid' : 'none';
+    function toggleVisibility() {
+      const cardsContainer = document.getElementById('cardsContainer');
+      const textInputContainer = document.getElementById('textInputContainer');
+      const logoContainer = document.getElementById('logoContainer');
+      const bottomLabel = document.getElementById('bottomLabel');
+      cardsVisible = !cardsVisible;
+      cardsContainer.style.display = cardsVisible ? 'grid' : 'none';
+      textInputContainer.style.display = cardsVisible ? 'none' : 'grid';
+      logoContainer.style.display = cardsVisible ? 'none' : 'block';
+      bottomLabel.style.display = cardsVisible ? 'block' : 'none';
     }
 
     function playSound(soundFile) {
-        var audio = new Audio(soundFile);
-        audio.play();
+      var audio = new Audio(soundFile);
+      audio.play();
     }
 
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'h' || event.key === 'H') {
-            toggleCardsVisibility();
-        }
+    document.addEventListener('keydown', function (event) {
+      if (event.key === '=' || event.key === '=') {
+        toggleVisibility();
+      }
     });
-</script>
-</body>
-</html>
+  </script>
+  </body>
+
+  </html>
