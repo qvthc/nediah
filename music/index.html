@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-white dark:bg-gray-800 dark:text-gray-300 p-4">
+    <h1 class="text-3xl font-bold mb-4">Music Playlist</h1>
+
+    <ol class="list-decimal pl-4">
+        <li><a href="https://cdn.discordapp.com/attachments/1185866165331955794/1207154684788220044/1.mp3?ex=65de9d68&is=65cc2868&hm=bcfc389685af669df2dbd6312b2e8733b7b1287dd260a9e47cdb3225ae4af037" class="hover:underline" onclick="playMusic(event, 'https://cdn.discordapp.com/attachments/1185866165331955794/1207154684788220044/1.mp3?ex=65de9d68&is=65cc2868&hm=bcfc389685af669df2dbd6312b2e8733b7b1287dd260a9e47cdb3225ae4af037')">Kanye West - Keys to My Life</a></li>
+
+
+      
+        <li><a href="https://cdn.discordapp.com/attachments/1185866165331955794/1207154684788220044/2.mp3?ex=65de9d68&is=65cc2868&hm=bcfc389685af669df2dbd6312b2e8733b7b1287dd260a9e47cdb3225ae4af037" class="hover:underline" onclick="playMusic(event, 'https://cdn.discordapp.com/attachments/1185866165331955794/1207155855540224030/2.mp3?ex=65de9e7f&is=65cc297f&hm=a94b791b34459014caceee8010d8784d6bdd1062b5e5cce98f372ec28c26279e&')">Kanye West - Praise God</a></li>
+
+
+      
+        <li><a href="https://cdn.discordapp.com/attachments/1185866165331955794/1207154684788220044/3.mp3?ex=65de9d68&is=65cc2868&hm=bcfc389685af669df2dbd6312b2e8733b7b1287dd260a9e47cdb3225ae4af037" class="hover:underline" onclick="playMusic(event, 'https://cdn.discordapp.com/attachments/1185866165331955794/1207155941720719430/Kid_Cudi_-_love_FlexyOkay.com.mp3?ex=65de9e94&is=65cc2994&hm=2903aa5b5fd88f8e2fd746aa91d9d2f7cb5f5aac79d37aa6f9230b043e5e9721&')">Kid Cudi - Lv</a></li>
+
+
+      
+        <li><a href="https://cdn.discordapp.com/attachments/1185866165331955794/1207154684788220044/4.mp3?ex=65de9d68&is=65cc2868&hm=bcfc389685af669df2dbd6312b2e8733b7b1287dd260a9e47cdb3225ae4af037" class="hover:underline" onclick="playMusic(event, 'https://cdn.discordapp.com/attachments/1185866165331955794/1207156176102629486/King_Von_-_The_Code.mp3?ex=65de9ecc&is=65cc29cc&hm=b07b7ded34557c7a2742f4e4b58a44696b17ad6bdd6d6a5110826f652db5d1a5&')">King V - The Code</a></li>
+
+      
+        <li><a href="https://cdn.discordapp.com/attachments/1185866165331955794/1207154684788220044/5.mp3?ex=65de9d68&is=65cc2868&hm=bcfc389685af669df2dbd6312b2e8733b7b1287dd260a9e47cdb3225ae4af037" class="hover:underline" onclick="playMusic(event, 'https://cdn.discordapp.com/attachments/1185866165331955794/1207156259363758120/Tidal_Waves.mp3?ex=65de9ee0&is=65cc29e0&hm=fb4c4712e0c8ee94336f6f0f80b58c12f1e990e73e2e2c6ceddad12c75a13cc1&')">Thee Oh Sees - Tidal Waves</a></li>
+
+
+      
+        <li><a href="https://cdn.discordapp.com/attachments/1185866165331955794/1207154684788220044/6.mp3?ex=65de9d68&is=65cc2868&hm=bcfc389685af669df2dbd6312b2e8733b7b1287dd260a9e47cdb3225ae4af037" class="hover:underline" onclick="playMusic(event, 'https://cdn.discordapp.com/attachments/1185866165331955794/1207156328603328522/Vultures-ft-Kanye-West-Ty-Dolla-ign-Bump-J-HiphopMood.com.mp3?ex=65de9ef0&is=65cc29f0&hm=0890034784305f8c5209915636e34b7a71758064367bcf202fd7f00afd9554bb&')">Kanye West - Vultures</a></li>
+
+        <li><a href="https://cdn.discordapp.com/attachments/1185866165331955794/1207154684788220044/6.mp3?ex=65de9d68&is=65cc2868&hm=bcfc389685af669df2dbd6312b2e8733b7b1287dd260a9e47cdb3225ae4af037" class="hover:underline" onclick="playMusic(event, 'https://cdn.discordapp.com/attachments/1185866165331955794/1207156684242423869/4.mp3?ex=65de9f45&is=65cc2a45&hm=232ad6d3736d3e6b5b886bb53bf4f82f4d2697069ea3a3cd75cef55cc7336954&')">Kanye West - Jail Pt 2</a></li>
+
+
+        <li><a href="https://cdn.discordapp.com/attachments/1185866165331955794/1207154684788220044/6.mp3?ex=65de9d68&is=65cc2868&hm=bcfc389685af669df2dbd6312b2e8733b7b1287dd260a9e47cdb3225ae4af037" class="hover:underline" onclick="playMusic(event, 'https://cdn.discordapp.com/attachments/1185866165331955794/1207157352474615839/Kanye_West_-_On_Sight_FlexyOkay.com.mp3?ex=65de9fe4&is=65cc2ae4&hm=ce5abc0e4a0df6678c29f0013b218f59e4e75d43abdd4c9fb052fccf2fe15aea&')">Kanye West - On Sight</a></li>
+    </ol>
+
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+    
+    <script>
+        function playMusic(event, url) {
+            event.preventDefault();
+            var audio = new Audio(url);
+            audio.play();
+        }
+    </script>
+</body>
+
+</html>
